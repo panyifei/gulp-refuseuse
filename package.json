@@ -1,0 +1,14 @@
+{
+  "name": "gulp-refuseuse",
+  "version": "0.0.0",
+  "description": "A gulp task for refuseuse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "refuseuse"
+  ],
+  "author": "panyifei",
+  "license": "ISC"
+}
