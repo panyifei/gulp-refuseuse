@@ -3,7 +3,7 @@ var gutil=require('gulp-util');
 var through=require('through2');
 var refuseuse=require('refuseuse');
 
-module.exports = function (options) {
+module.exports = function (task) {
     return through.obj(function (file, enc, cb) {
         // 主体实现忽略若干行
         if(file.isNull()){
@@ -16,7 +16,7 @@ module.exports = function (options) {
             return cb();
         }
 
-        refuseuse.refuseFunctionByNode(file.contents.toString(),options);
+        refuseuse.refuseFunctionByNode(file.contents.toString(),task);
 
         this.push(file);
         cb;

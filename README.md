@@ -19,8 +19,8 @@ var gulp = require('gulp');
 
 gulp.task('scripts',function(){
   gulp.src("./lib/aa.js")
-  .pipe(refuseuse('_aa'))
-  .pipe(refuseuse('_use'));
+  .pipe(refuseuse([{type:'Function',value:'_use'}]))
+  .pipe(refuseuse([{type:'Function',value:'_use'}]));
 });
 
 
