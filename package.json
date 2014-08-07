@@ -1,6 +1,6 @@
 {
   "name": "gulp-refuseuse",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A gulp task for refuseuse",
   "main": "index.js",
   "scripts": {
@@ -10,5 +10,10 @@
     "refuseuse"
   ],
   "author": "panyifei",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gulp-util": "^3.0.0",
+    "refuseuse": "^1.4.6",
+    "through2": "^0.5.1"
+  }
 }
